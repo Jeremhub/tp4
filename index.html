@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ma Todo List</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <meta charset="utf-8"/>
+    </head>
+    <body onload="GetAllTask()">
+        <aside id="ListeDeTaches">
+            <h3>Liste de mes tâches</h3>
+            <div id="Liste">
+                
+            </div>
+        </aside>
+        <div id="MaTache">
+            <h3>Détails de la tâche</h3>
+            <div id="InfosTaches">
+                <label for="taskid">Id de la tâche:</label>
+                <input type="number" id="taskid" name="taskid">
+                <br/>
+                <input type="button" value="Obtenir les informations de la tâche" onclick="GetTask()">
+                <input type="button" value="Supprimer la tâche" onclick="DeleteTask()">
+            </div>
+            <hr id="separateurmatache"/>
+            <div id="ParamsTache">
+                <label for="tasktitle">Intitulé de la tâche:</label>
+                <input type="text" id="tasktitle" name="tasktitle">
+                <br/>
+                <label for="taskdesc">Description de la tâche:</label>
+                <input type="text" id="taskdesc" name="taskdesc">
+                <br/>
+                <label for="taskdeadline">Deadline de la tâche (Format: AAAA-MM-JJ):</label>
+                <input type="date" id="taskdeadline" name="taskdeadline">
+                <br/>
+                <p>Etat de la tâche:</p>
+                <input type="radio" id="fait" name="done" value="1">
+                <label for="fait">Fait</label>
+                <input type="radio" id="pasfait" name="done" value="0" checked>
+                <label for="pasfait">Pas fait</label>
+                <input type="button" value="Mettre à jour la tâche" onclick="UpdateTask()">
+                <input type="button" value="Créer la tâche" onclick="CreateTask()">
+            </div>
+        </div>
+        <script type="text/javascript" src="scripts.js"></script>
+    </body>
+</html>

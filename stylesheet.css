@@ -1,0 +1,20 @@
+#ListeDeTaches
+{
+    width: 40%;
+    height: 100%;
+    float: left;
+    background-color: rgb(172, 172, 172);
+    border-style: solid;
+    border-radius: 12px;
+    text-align: center;
+}
+#MaTache
+{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    background-color: burlywood;
+    border-style: solid;
+    border-radius: 8px;
+    text-align: center;
+}
